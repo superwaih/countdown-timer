@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+:root, :before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --Grayishblue: hsl(237, 18%, 59%);
+    --Softred: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+     --Darkdesaturatedblue: hsl(236, 21%, 26%);
+     --Verydarkblue: hsl(235, 16%, 14%);
+     --Verydarkmostlyblackblue: hsl(234, 17%, 12%);
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+    background-color: var(--Verydarkmostlyblackblue);
+    /* height: 100vh;
+    width: 100%; */
+    background-image: url('./images/bg-stars.svg');
+    
+    
+}
+
+.countdown-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 75vh;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.counter, .counter-label{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+.counter div{
+    padding: 10px;
+    margin: 30px 30px 0px 30px;
+    height: 120px;
+    color: var(--Softred);
+    font-size: 80px;
+    background-color: var(--Darkdesaturatedblue);
+    text-align: center;
+    outline: none;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+}
+.counter-label div{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+    color: var(--Grayishblue);
+}
+.counter-label{
+    color: var(--Verydarkblue);
+}
+.text-count h1{
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    font-size: 18px;
+}
+section{
+    /* display: flex; */
+    height: 20vh;
+    background-image: url('./images/pattern-hills.svg');
+    background-position: top;
+    background-repeat: repeat-x;
+
+}
+section a{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgs:hover{
+    background-color: var(--Softred);
+    border-radius: 5px;
+    
+}
+@media screen and (max-width:760px) {
+   .counter{
+       height: 90px;
+       margin: 15px;
+   }
+   .counter div{
+    padding: 5px;
+    margin: 10px 10px 0px 10px;
+    height: 60px;
+    font-size: 45px;
+    width: 58px;
+   }
+   .counter-container{
+       height: 30vh;
+   }
+   .counter-label div{
+    text-align: center;
+    margin: 1px;
+    font-size: 13px;
+    width: 80px;
+}
+    
+}
+@media screen and (max-width:360px){
+    .counter div{
+        padding: 5px;
+        margin: 7px;
+        height: 40px;
+        font-size: 30px;
+        width: 32px;
+       }
+       .counter-label div{
+           text-align: center;
+           margin: 7px;
+           font-size: 13px;
+           width: 32px;
+       }
+
+}
