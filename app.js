@@ -1,5 +1,5 @@
 function countdown(){
-   const future = new Date("August 15, 2021, 00:00:00").getTime();
+   const future = new Date("October 29, 2021, 00:00:00").getTime();
    const now = new Date().getTime();
     var gap = future - now;
     
